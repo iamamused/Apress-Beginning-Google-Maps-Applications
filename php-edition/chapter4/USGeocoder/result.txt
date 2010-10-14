@@ -1,0 +1,27 @@
+Store: "The Original" Ron Jon Surf Shop
+Latitude: 39.649509
+Longitude: -74.177136
+
+Store: "One of a Kind" Ron Jon Surf Shop
+Latitude: 28.356433
+Longitude: -80.608227
+
+Store: Ron Jon Surf Shop - Sunrise
+Latitude: 26.150513
+Longitude: -80.316476
+
+Store: Ron Jon Surf Shop - Orlando
+Latitude: 28.466795
+Longitude: -81.449860
+
+Store: Ron Jon Surf Shop - Key West
+Latitude: 24.560083
+Longitude: -81.806069
+
+Store: Ron Jon Surf Shop - California
+Latitude: 33.781086
+Longitude: -117.892520
+
+Store: Ron Jon Cape Caribe Resort
+Latitude: 2: couldn't find this address! sorry
+Longitude:

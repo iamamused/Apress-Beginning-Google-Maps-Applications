@@ -1,0 +1,22 @@
+TLID	6	10	TIGER/Line® ID, Permanent 1-Cell Number
+RTSQ	16	3	Record Sequence Number
+LONG1	19	10	Point 1, Longitude
+LAT1	29	9	Point 1, Latitude
+LONG2	38	10	Point 2, Longitude
+LAT2	48	9	Point 2, Latitude
+LONG3	57	10	Point 3, Longitude
+LAT3	67	9	Point 3, Latitude
+LONG4	76	10	Point 4, Longitude
+LAT4	86	9	Point 4, Latitude
+LONG5	95	10	Point 5, Longitude
+LAT5	105	9	Point 5, Latitude
+LONG6	114	10	Point 6, Longitude
+LAT6	124	9	Point 6, Latitude
+LONG7	133	10	Point 7, Longitude
+LAT7	143	9	Point 7, Latitude
+LONG8	152	10	Point 8, Longitude
+LAT8	162	9	Point 8, Latitude
+LONG9	171	10	Point 9, Longitude
+LAT9	181	9	Point 9, Latitude
+LONG10	190	10	Point 10, Longitude
+LAT10	200	9	Point 10, Latitude

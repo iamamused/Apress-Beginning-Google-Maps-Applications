@@ -1,0 +1,10 @@
+<div class="content">    
+  <h2><%=controller.controller_name.humanize.titleize.sub('Chap', 'Chapter')%> Examples</h2>
+  <ul>
+    <%controller.get_pages.each do |page|%>
+    <li><%=link_to page.gsub('_',' '), :action=>page%></li>
+    <%end%>
+  </ul>  
+  
+  <%=render :partial=>'app/more_resources'%>
+</div>

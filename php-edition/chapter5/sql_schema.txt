@@ -1,0 +1,67 @@
+/* [listing 5-2] */
+CREATE TABLE fcc_location (
+	loc_id int(10) unsigned NOT NULL auto_increment,
+	unique_si_loc bigint(20) NOT NULL default '0',
+	lat_deg int(11) default '0',
+	lat_min int(11) default '0',
+	lat_sec float default '0',
+	lat_dir char(1) default NULL,
+	latitude double default '0',
+	long_deg int(11) default '0',
+	long_min int(11) default '0',
+	long_sec float default '0',
+	long_dir char(1) default NULL,
+	longitude double default '0',
+	PRIMARY KEY (loc_id),
+	KEY unique_si (unique_si_loc)
+) ENGINE=MyISAM ;
+
+CREATE TABLE fcc_owner (
+	owner_id int(10) unsigned NOT NULL auto_increment,
+	unique_si_own bigint(20) NOT NULL default '0',
+	owner_name varchar(200) default NULL,
+	owner_address varchar(35) default NULL,
+	owner_city varchar(20) default NULL,
+	owner_state char(2) default NULL,
+	owner_zip varchar(10) default NULL,
+	PRIMARY KEY (owner_id),
+	KEY unique_si (unique_si_own)
+) ENGINE=MyISAM ;
+
+CREATE TABLE fcc_structure (
+	struc_id int(10) unsigned NOT NULL auto_increment,
+	unique_si bigint(20) NOT NULL default '0',
+	date_constr date default '0000-00-00',
+	date_removed date default '0000-00-00',
+	struc_address varchar(80) default NULL,
+	struc_city varchar(20) default NULL,
+	struc_state char(2) default NULL,
+	struc_height double default '0',
+	struc_elevation double NOT NULL default '0',
+	struc_ohag double NOT NULL default '0',
+	struc_ohamsl double default '0',
+	struc_type varchar(6) default NULL,
+	PRIMARY KEY (struc_id),
+	KEY unique_si (unique_si),
+	KEY struc_state (struc_state)
+) ENGINE=MyISAM;
+/* [listing 5-2 end] */
+
+/* [listing 5-6] */
+CREATE VIEW fcc_towers
+	AS SELECT * FROM fcc_structure, fcc_owner, fcc_location
+	WHERE unique_si=unique_si_own AND unique_si=unique_si_loc
+	ORDER BY struc_state, struc_type;
+/* [listing 5-6 end] */
+	
+/* [listing 5-9] */
+CREATE TABLE capital_cities (
+	uid int(11) NOT NULL auto_increment,
+	country text NOT NULL,
+	capital text NOT NULL,
+	lat float NOT NULL default '0',
+	lng float NOT NULL default '0',
+	PRIMARY KEY (uid),
+	KEY lat (lat,lng)
+) ENGINE=MyISAM;
+/* [listing 5-9 end] */

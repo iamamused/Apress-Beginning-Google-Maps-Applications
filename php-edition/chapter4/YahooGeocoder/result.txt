@@ -1,0 +1,37 @@
+Store: "The Original" Ron Jon Surf Shop
+Result Precision: address
+	Latitude: 39.649652
+	Longitude: -74.177547
+
+Store: "One of a Kind" Ron Jon Surf Shop
+Result Precision: address
+	Latitude: 28.356477
+	Longitude: -80.607969
+
+Store: Ron Jon Surf Shop - Sunrise
+Result Precision: address
+	Latitude: 26.156292
+	Longitude: -80.316945
+
+Store: Ron Jon Surf Shop - Orlando
+Result Precision: address
+	Latitude: 28.469972
+	Longitude: -81.450143
+
+Store: Ron Jon Surf Shop - Key West
+Result Precision: address
+	Latitude: 24.560431
+	Longitude: -81.805979
+
+Store: Ron Jon Surf Shop - California
+Result Precision: address
+	Latitude: 33.783424
+	Longitude: -117.890579
+
+Store: Ron Jon Cape Caribe Resort
+Result Precision: street
+	Warning: The street number could not be found. Here is a nearby location.
+	Address: 602 SHOREWOOD DR
+	Latitude: 28.40232
+	Longitude: -80.59554
+

@@ -1,0 +1,55 @@
+
+html { overflow: hidden; }
+
+html, body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+}
+
+#map {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+/* [listing 6-5] */
+#toolbar {
+     position: absolute;
+     top: 20px;
+     left: 60px;
+     width: 400px;
+     padding: 5px;
+     background: white;
+     border: 1px solid black;
+}
+/* [listing 6-5 end] */
+
+#toolbar h1 {
+     margin: 0;
+     font: bold 18px Helvetica, sans-serif;
+}
+
+#toolbar ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+#toolbar ul li {
+     display: inline;
+}
+
+#toolbar ul li a {
+     padding: 3px 6px;
+     color: #444;
+     text-decoration: none;
+     font-size: 12px;
+}
+
+#toolbar ul li a:hover {
+     color: #aaa;
+     background: #444;
+}

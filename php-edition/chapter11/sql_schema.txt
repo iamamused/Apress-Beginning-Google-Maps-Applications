@@ -1,0 +1,56 @@
+/* [listing 11-2] */
+CREATE TABLE uk_postcodes (
+	outcode varchar(4) NOT NULL default '',
+	latitude double NOT NULL default '0',
+	longitude double NOT NULL default '0',
+	PRIMARY KEY (outcode)
+) ENGINE=MyISAM;
+/* [listing 11-2 end] */
+
+/* [listing 11-5] */
+CREATE TABLE places (
+	place_id bigint(20) NOT NULL default '0',
+	state_fips char(2) NOT NULL default '',
+	county_fips char(3) NOT NULL default '',
+	place_fips varchar(5) NOT NULL default '',
+	state_name varchar(60) NOT NULL default '',
+	county_name varchar(30) NOT NULL default '',
+	place_name varchar(60) NOT NULL default '',
+	PRIMARY KEY (place_id),
+	KEY state_fips (state_fips,county_fips,place_fips)
+) ENGINE=MyISAM;
+
+CREATE TABLE street_names (
+	uid int(11) NOT NULL auto_increment,
+	TLID int(11) NOT NULL default '0',
+	place_id bigint(20) NOT NULL default '0',
+	CFCC char(3) NOT NULL default '',
+	DIR_PREFIX char(2) NOT NULL default '',
+	NAME varchar(30) NOT NULL default '',
+	TYPE varchar(4) NOT NULL default '',
+	DIR_SUFFIX char(2) NOT NULL default '',
+	PRIMARY KEY (uid),
+	KEY TLID (TLID,NAME)
+) ENGINE=MyISAM;
+
+CREATE TABLE address_ranges (
+	uid int(11) NOT NULL auto_increment,
+	TLID int(11) NOT NULL default '0',
+	RANGE_ID int(11) NOT NULL default '0',
+	FIRST varchar(11) NOT NULL default '',
+	LAST varchar(11) NOT NULL default '',
+	PRIMARY KEY (uid),
+	KEY TLID (TLID,FIRST,LAST)
+) ENGINE=MyISAM;
+
+CREATE TABLE complete_chains (
+	uid int(11) NOT NULL auto_increment,
+	TLID int(11) NOT NULL default '0',
+	SEQ int(11) NOT NULL default '0',
+	LATITUDE double NOT NULL default '0',
+	LONGITUDE double NOT NULL default '0',
+	PRIMARY KEY (uid),
+	KEY SEQ (SEQ,LATITUDE,LONGITUDE)
+) ENGINE=MyISAM;
+
+/* [listing 11-5 end] */

@@ -1,0 +1,3 @@
+The CN tower is located here:
+Latitude: 43.643865
+Longitude: -79.388545

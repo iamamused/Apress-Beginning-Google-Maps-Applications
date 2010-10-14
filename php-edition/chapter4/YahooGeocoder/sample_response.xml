@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResultSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:yahoo:maps" xsi:schemaLocation="urn:yahoo:maps http://api.local.yahoo.com/MapsService/V1/GeocodeResponse.xsd">
+	<Result precision="address" warning="The exact location could not be found, here is the closest match: 2560 9th St, Berkeley, CA 94710">
+		<Latitude>37.859569</Latitude>
+		<Longitude>-122.291673</Longitude>
+		<Address>2560 9TH ST</Address>
+		<City>BERKELEY</City>
+		<State>CA</State>
+		<Zip>94710-2500</Zip>
+		<Country>US</Country>
+	</Result>
+</ResultSet>

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<%=GOOGLE_MAPS_KEY%>" type="text/javascript"></script>
+  <%=javascript_include_tag 'prototype','chap_ten_client_geocoder'%>
+  <%=stylesheet_link_tag 'style_6_three_panels'%>
+</head>
+<body id="body">
+	<div id="toolbar">
+		<h1>Lengths and Areas</h1>
+		<ul id="sidebar-controls">
+			<li><%=link_to_function 'hide',"Element.addClassName('body','sidebar-off')",{:id=>'button-sidebar-hide'}%></li>
+			<li><%=link_to_function 'show',"Element.removeClassName('body','sidebar-off')",{:id=>'button-sidebar-show'}%></li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<div id="map-wrapper">
+			<div id="map"></div>
+		</div>
+    <div id="sidebar">
+			<div id="line-info">
+				<p><span id="length-title">Length</span>: <span id="length-data">0</span> km</p>
+				<p>Area: <span id="area-data">0</span> km<sup>2</sup></p>
+			</div>
+				
+			<p>
+				<input type="text" id="s" name="s" />
+  			<%=button_to_function "Add", "handleSearch()"%>
+			</p>
+		
+    	<ul id="sidebar-list">
+    	</ul>
+    </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stores>
+ <store>
+  <name>"The Original" Ron Jon Surf Shop</name>
+  <address>901 Central Avenue</address>
+  <city>Long Beach Island</city>
+  <state>NJ</state>
+  <zip>08008</zip>
+  <phone>(609) 494-8844</phone>
+  <pin>store</pin>
+ </store>
+ <store>
+  <name>"One of a Kind" Ron Jon Surf Shop</name>
+  <address>4151 North Atlantic Avenue</address>
+  <city>Cocoa Beach</city>
+  <state>FL</state>
+  <zip>32931</zip>
+  <phone>(321) 799-8888</phone>
+  <pin>store</pin>
+ </store>
+ <store>
+  <name>Ron Jon Surf Shop - Sunrise</name>
+  <address>2610 Sawgrass Mills Circle</address>
+  <address2>Suite 1415</address2>
+  <city>Sunrise</city>
+  <state>FL</state>
+  <zip>33323</zip>
+  <phone>(954) 846-1880</phone>
+  <pin>store</pin>
+ </store>
+ <store>
+  <name>Ron Jon Surf Shop - Orlando</name>
+  <address>5160 International Drive</address>
+  <city>Orlando</city>
+  <state>FL</state>
+  <zip>32819</zip>
+  <phone>(407) 481-2555</phone>
+  <pin>store</pin>
+ </store>
+ <store>
+  <name>Ron Jon Surf Shop - Key West</name>
+  <address>503 Front Street</address>
+  <city>Key West</city>
+  <state>FL</state>
+  <zip>33040</zip>
+  <phone>(305) 293-8880</phone>
+  <pin>store</pin>
+ </store>
+ <store>
+  <name>Ron Jon Surf Shop - California</name>
+  <address>20 City Blvd.</address>
+  <address2>West Building C Suite 1</address2>
+  <city>Orange</city>
+  <state>CA</state>
+  <zip>92868</zip>
+  <phone>(714) 939-9822</phone>
+  <pin>store</pin>
+ </store>
+ <store>
+  <name>Ron Jon Cape Caribe Resort</name>
+  <address>1000 Shorewood Drive</address>
+  <city>Cape Canaveral</city>
+  <state>FL</state>
+  <zip>32920</zip>
+  <phone>(321) 328-2830</phone>
+  <pin>resort</pin>
+ </store>
+</stores>

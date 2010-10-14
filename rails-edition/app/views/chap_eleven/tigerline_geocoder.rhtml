@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"~CCC
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<%=GOOGLE_MAPS_KEY%>" type="text/javascript"></script>
+	<!--[if IE]><style type="text/css"> v\:* { behavior:url(#default#VML); } </style><![endif]-->
+  <%if @geo && @geo[:success]%>
+  <script type="text/javascript">
+    var chains=<%=@geo[:chains].to_json%>;
+    var lat=<%=@geo[:lat]%>;
+    var lng=<%=@geo[:lng]%>
+  </script>
+  <%end%>
+</head>
+<body>
+<h3>Tiger/Line Geocoder</h3>
+All addresses are assumed to be San Francisco, California
+<%form_for :input do |c|%>
+  Number: <%=c.text_field :number, :size=>5, :value=>@number %>
+  Street: <%=c.text_field :street, :size=>15, :value=>@street %>
+  <%=submit_tag 'Geocode it!'%>
+<%end%>
+<%if @geo && @geo[:success]%>
+  <div id="map" style="width: 100%; height:500px"></div>
+  <pre><%=@geo.to_yaml%></pre>
+<%elsif @geo && !@geo[:success]%>
+  <h2>Could not geocode address</h2>
+<%end%>
+</body>
+</html>

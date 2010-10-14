@@ -1,0 +1,146 @@
+
+html { overflow: hidden; }
+
+html, body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+}
+
+body { margin: 10px; }
+
+#content {
+     margin-top: 10px;
+     position: relative;
+}
+
+#map {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border: 1px solid #aaa;
+}
+
+#map-wrapper {
+     position: relative;
+     height: 100%;
+}
+
+#sidebar {
+     position: absolute;
+     border: 1px solid #aaa;
+     top: 0;
+     width: 290px;
+     height: 100%;
+     overflow: auto;
+}
+
+#sidebar p {
+     margin: 10px;
+}
+
+#sidebar ul#sidebar-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+#sidebar ul#sidebar-list li a {
+     display: block;
+     border: 1px solid #ddd;
+     background: #eee;
+     margin: 5px;
+     padding: 4px;
+     font: 12px Helvetica, sans-serif;
+     text-decoration: none;
+     color: #444;
+}
+
+#sidebar ul#sidebar-list li.current a {
+     border: 1px solid #444;
+     border-left-width: 3px;
+     padding-left: 2px;
+}
+
+#sidebar ul#sidebar-list li a:hover {
+     background: white;
+     color: #555;
+}
+
+#sidebar ul#sidebar-list li a strong {
+     display: block;
+}
+#sidebar ul#sidebar-list li a span {
+     font-style: italic;
+     font-size: 11px;
+}
+
+body.sidebar-right #map-wrapper { margin-right: 300px; }
+body.sidebar-right #sidebar { right: 0; }
+
+body.nosidebar #map-wrapper { margin: 0; }
+body.nosidebar #sidebar { display: none; }
+
+body.sidebar-right a#button-sidebar-show,
+body.nosidebar a#button-sidebar-hide { display: none; }
+
+body.geocoder-idle #sidebar #address-search #working { display: none; }
+body.geocoder-busy #sidebar #address-search input { visibility: hidden; color: white; }
+
+#address-search {
+    position: relative;
+    padding: 10px;
+}
+#address-search #working {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#toolbar {
+     background: white;
+     padding: 4px;
+     border: 1px solid black;
+     position: relative;
+}
+/* holly hack for IE to get position:bottom right 
+   see: http://www.positioniseverything.net/abs_relbugs.html
+\*/
+* html #toolbar { height: 1px; }
+/* */
+
+#toolbar h1 {
+     margin: 0;
+     font: bold 18px Helvetica, sans-serif;
+}
+
+#toolbar ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+#toolbar ul#sidebar-controls {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+#toolbar ul li {
+     display: inline;
+}
+
+#toolbar ul li a {
+     padding: 3px 6px;
+     color: #444;
+     text-decoration: none;
+     font-size: 12px;
+}
+
+#toolbar ul li a:hover {
+     color: #aaa;
+     background: #444;
+}
+

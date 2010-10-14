@@ -1,0 +1,6 @@
+TLID	6	10	TIGER/Line® ID, Permanent 1-Cell Number
+RTSQ	16	3	Record Sequence Number
+FRADDL	19	11	Start Address, Left
+TOADDL	30	11	End Address, Left
+FRADDR	41	11	Start Address, Right
+TOADDR	52	11	End Address, Right

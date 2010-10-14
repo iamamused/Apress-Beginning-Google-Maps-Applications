@@ -1,0 +1,77 @@
+/**********************************************/
+/* General */
+body {
+  font-family: arial;
+  margin:0px;
+}
+
+a {
+  text-decoration:none;
+  color:blue;
+}
+a:hover {
+  background-color:#FCF9A9;
+}
+
+img {
+  border:0px;
+}
+
+
+/**********************************************/
+/* Title */
+.title {
+  background: #000;
+  border-bottom:1px solid gray;
+  padding:4px 0px 4px 40px;;
+}
+
+.title h2 {
+  margin:2px 0px 6px 0px;
+}
+.title h2 a {
+  color: #FDC339;
+  text-decoration:none;
+}
+
+.title h2 a:hover {
+  color: #FDC339;
+  background-color:transparent;
+}
+
+.title .subtitle {
+  color:white;
+}
+
+/**********************************************/
+/* welcome */
+.banner {
+	height: 230px;
+	width: 100%; 
+	background: url('/images/tall-blue-gradient.gif'); 
+	background-repeat: repeat-x;
+	padding:20px 10px 10px 40px;
+	position:relative;
+}
+
+#book-thumbnail { float:left}
+#thumbnail-image {
+  border:1px solid white;
+}
+
+#welcome-text {
+  float:left; 
+  width:500px; 
+  margin:10px 40px 0px 40px;
+}
+#welcome-text p {
+  font-size:22px;
+  color: #666;
+  margin-top:0px;
+}
+
+/**********************************************/
+/* Content */
+.content {
+  margin:10px 40px 10px 40px;
+}

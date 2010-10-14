@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<%=GOOGLE_MAPS_KEY%>" type="text/javascript"></script>
+  <%=javascript_include_tag 'prototype','chap_six_fullscreen_map'%>
+  <script type="text/javascript">
+  var markers=<%=@towers.to_json%>;
+  </script>
+  <%=stylesheet_link_tag 'style_6_3'%>
+</head>
+<body id="body">
+  <div id="map-wrapper">
+    <div id="map"></div>
+  </div>
+  <div id="toolbar">
+    <h1>Cell-Tower Locations</h1>
+    <ul id="filters">
+      <li><a href="#">Towers</a></li>
+      <li><a href="#">Poles</a></li>
+      <li><a href="#">Masts</a></li>
+      <li><a href="#">Other</a></li>
+    </ul>
+  </div>
+
+  <div id="sidebar">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin dapibus convallis eros. Suspendisse eu mi. Quisque urna ligula, ullamcorper et, pellentesque vel, vulputate in, quam. Pellentesque tortor velit, convallis eget, condimentum sit amet, eleifend sed, velit. Quisque nisi libero, euismod eu, ornare eu, mollis et, diam. Ut consequat est. Sed vel justo. Etiam sed quam. Donec tempor. Phasellus ipsum est, pulvinar non, viverra in, bibendum et, justo. Suspendisse fermentum est eget sem. Suspendisse orci. Pellentesque vulputate elementum ante.</p>    
+    <p>Ut ultrices porttitor justo. Vivamus convallis, justo ut tincidunt porttitor, dui nisi ullamcorper risus, et luctus est enim in pede. Pellentesque quis ligula. Donec varius sagittis dui. In ullamcorper diam vel eros. Nunc scelerisque erat suscipit sapien. Ut cursus. Aenean ut ipsum. Vestibulum a elit eget diam mollis iaculis. Fusce orci purus, facilisis non, gravida at, egestas non, urna. Donec ultrices, turpis sit amet accumsan rutrum, orci elit porttitor sem, a varius magna risus vel lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut felis vitae nisl hendrerit auctor. Vestibulum metus magna, semper et, congue a, sodales in, quam. In ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum porttitor libero. Suspendisse enim. Phasellus ligula libero, adipiscing in, dignissim non, condimentum eget, eros. Nam non leo ac turpis hendrerit vulputate. </p>
+  </div>
+</body>
+</html>

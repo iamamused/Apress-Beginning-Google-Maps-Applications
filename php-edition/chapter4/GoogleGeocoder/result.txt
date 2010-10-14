@@ -1,0 +1,57 @@
+Store: "The Original" Ron Jon Surf Shop
+Source Address: 901 Central Avenue, Long Beach Island, NJ, 08008
+Status: 200
+Result Address: 901 Central Ave, Barnegat Light, NJ 08008, USA
+    Latitude: 39.748586
+    Longitude: -74.111764
+Result Address: 901 Central Ave, Surf City, NJ 08008, USA
+    Latitude: 39.661016
+    Longitude: -74.168010
+Result Address: 901 Central Ave, Ship Bottom, NJ 08008, USA
+    Latitude: 39.649667
+    Longitude: -74.177253
+
+Store: "One of a Kind" Ron Jon Surf Shop
+Source Address: 4151 North Atlantic Avenue, Cocoa Beach, FL, 32931
+Status: 200
+Result Address: 4151 N Atlantic Ave, Cocoa Beach, FL 32931, USA
+    Latitude: 28.356453
+    Longitude: -80.608170
+
+Store: Ron Jon Surf Shop - Sunrise
+Source Address: 2610 Sawgrass Mills Circle, Sunrise, FL, 33323
+Status: 200
+Result Address: 2610 Sawgrass Mills Cir, Sunrise, FL 33323, USA
+    Latitude: 26.150899
+    Longitude: -80.316233
+
+Store: Ron Jon Surf Shop - Orlando
+Source Address: 5160 International Drive, Orlando, FL, 32819
+Status: 200
+Result Address: 5160 International Dr, Orlando, FL 32819, USA
+    Latitude: 28.469873
+    Longitude: -81.450311
+
+Store: Ron Jon Surf Shop - Key West
+Source Address: 503 Front Street, Key West, FL, 33040
+Status: 200
+Result Address: 503 Front St, Key West, FL 33040, USA
+    Latitude: 24.560287
+    Longitude: -81.805817
+
+Store: Ron Jon Surf Shop - California
+Source Address: 20 City Blvd., Orange, CA, 92868
+Status: 200
+Result Address: 100 City Blvd E, Orange, CA 92868, USA
+    Latitude: 33.782107
+    Longitude: -117.889878
+Result Address: 2 City Blvd W, Orange, CA 92868, USA
+    Latitude: 33.779838
+    Longitude: -117.893568
+
+Store: Ron Jon Cape Caribe Resort
+Source Address: 1000 Shorewood Drive, Cape Canaveral, FL, 32920
+Status: 200
+Result Address: 699 Shorewood Dr, Cape Canaveral, FL 32920, USA
+    Latitude: 28.402944
+    Longitude: -80.604093

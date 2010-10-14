@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Untitled</title>
+	<meta name="generator" content="BBEdit 8.2" />
+	
+	<script type="text/javascript">
+	function getRenderedProperty(e, property){
+		if(document.defaultView && document.defaultView.getComputedStyle){
+			return document.defaultView.getComputedStyle(e, "").getPropertyValue(property);
+		} else if(e.currentStyle){
+			property = property.replace(/\-(\w)/g, function (strMatch, p1){ return p1.toUpperCase(); });
+			return e.currentStyle[property];
+		}
+	}
+	
+	function init() {
+
+		container = document.getElementById('map');
+		width = null; //in pixels
+		
+		//get the content div
+		var content = document.createElement("div");
+		content.innerHTML = "hello world";
+		content.style.display='table'; //table to get the correct width!
+
+		if(!width || width <= 0) {
+			content.style.minWidth = '100px';
+			content.style.maxWidth = '500px';
+		} else {
+			content.style.width= width + 'px';
+		}
+		
+		container.appendChild(content);
+		
+		var contentWidth = getRenderedProperty(content,'width');
+		alert(contentWidth);
+		
+		contentWidth = parseInt(contentWidth.substring(0, contentWidth.length-2));
+		var contentHeight = getRenderedProperty(content,'height');
+		contentHeight = parseInt(contentHeight.substring(0, contentHeight.length-2));
+		
+		content.parentNode.removeChild(content);
+		content.style.display='block';
+		content.style.position='absolute';
+		content.style.left='5px';
+		content.style.top='5px';
+		
+		var little = document.createElement("div");
+		
+		little.innerHTML= 
+			  '<img src="/chapter9/CustomInfoWindow/littleWindow/tl.png" style="position:absolute; left:0px; top:0px; width:5px; height:5px;">'
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/t.png" style="position:absolute; left:5px; top:0px; width:' + contentWidth + 'px; height:5px;">'
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/tr.png" style="position:absolute; left:' + (contentWidth+5) + 'px; top:0px; width:5px; height:5px;">'
+
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/l.png" style="position:absolute; left:0px; top:5px; width:5px; height:' + contentHeight + 'px;">'
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/r.png" style="position:absolute; left:' + (contentWidth+5) + 'px; top:5px; width:5px; height:' + contentHeight + 'px;">'
+
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/bl.png" style="position:absolute; left:0px; top:' + (contentHeight+5) + 'px; width:5px; height:5px;">'
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/p.png" style="position:absolute; left:5px; top:' + (contentHeight+5) + 'px; width:17px; height:18px;">'
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/b.png" style="position:absolute; left:22px; top:' + (contentHeight+5) + 'px; width:' + (contentWidth-17) + 'px; height:5px;">'
+			+ '<img src="/chapter9/CustomInfoWindow/littleWindow/br.png" style="position:absolute; left:' + (contentWidth+5) + 'px; top:' + (contentHeight+5) + 'px; width:5px; height:5px;">'
+		
+		little.appendChild(content);
+		
+		container.appendChild(little);
+		
+	}
+	
+	window.onload = init;	
+	</script>
+</head>
+<body>
+
+	<div id="map"></div>
+
+</body>
+</html>

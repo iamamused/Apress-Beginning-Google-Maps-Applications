@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.google.com/earth/kml/2">
+<Document>
+	<name>toronto.kml</name>
+	<Placemark>
+		<name>CN Tower</name>
+		<description>
+			The CN Tower (Canada's National Tower, Canadian National Tower), at 553.33 metres (1,815 ft., 5 inches) is the tallest freestanding structure on land. It is located in the city of Toronto, Ontario, Canada, and is considered the signature icon of the city. The CN Tower attracts close to two million visitors annually.
+				
+			http://en.wikipedia.org/wiki/CN_Tower
+		</description>
+		<Point>
+			<coordinates>-79.386864,43.642426</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Rogers Centre</name>
+		<description>
+			Rogers Centre, formerly known as (and often still called) SkyDome, is a multi-purpose stadium in Toronto, Ontario, situated next to the CN Tower near the shores of Lake Ontario. It is home to Major League Baseball's Toronto Blue Jays and the Canadian Football League's Toronto Argonauts. While it is primarily a sports venue, Rogers Centre also hosts other large-scale events such as conventions, trade fairs, and concerts.
+
+			http://en.wikipedia.org/wiki/Rogers_Centre
+		</description>
+		<Point>
+			<coordinates>-79.389181,43.641464</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Air Canada Centre</name>
+		<description>
+			The Air Canada Centre, often referred to simply as The ACC, is a multi-purpose arena located on Bay Street in downtown Toronto, Ontario. It is the home of the Toronto Raptors of the NBA, the Toronto Maple Leafs of the NHL, and the Toronto Rock of the NLL. It was also home to the Toronto Phantoms of the AFL during their brief existence.
+
+			http://en.wikipedia.org/wiki/Air_Canada_Centre
+		</description>
+		<Point>
+			<coordinates>-79.37886,43.643544</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
+

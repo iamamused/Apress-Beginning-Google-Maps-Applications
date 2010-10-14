@@ -1,0 +1,16 @@
+TLID	6	10	TIGER/Line® ID, Permanent 1-Cell Number	
+FEDIRP	18	2	Feature Direction, Prefix	
+FENAME	20	30	Feature Name	
+FETYPE	50	4	Feature Type	
+FEDIRS	54	2	Feature Direction, Suffix	
+CFCC	56	3	Census Feature Class Code	
+FRADDL	59	11	Start Address, Left	
+TOADDL	70	11	End Address, Left	
+FRADDR	81	11	Start Address, Right	
+TOADDR	92	11	End Address, Right	
+PLACEL	161	5	FIPS 55	Code (Place/CDP), 2000 Left	
+PLACER	166	5	FIPS 55	Code (Place/CDP), 2000 Right	
+FRLONG	191	10	Start Longitude	
+FRLAT	201	9	Start Latitude	
+TOLONG	210	10	End Longitude
+TOLAT	220	9	End Latitude		

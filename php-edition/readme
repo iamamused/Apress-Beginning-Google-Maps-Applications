@@ -1,0 +1,23 @@
+Hello!
+
+Here you'll find most of the code broken out into examples rather than code
+listings. Many of the examples from the book are iterative and we felt that 
+a source download only made sense in this format.
+
+You should unpack this into the root of your experimental site, put your API
+key in the apikey.php file inthe root and fill in your database credentials
+in the db_credentials.php file. If you're not operating from the root then
+you'll need to make some minor changes to the way these two file are included
+in the scripts.
+
+Also, for some examples you'll still need to download the raw data that makes
+the code go. The BlueMarble example from chapter 7 is the best example of this
+as it requires a very large download and would not compress sufficiently to
+include directly in this archive.
+
+We hope these examples serve you well as a foundation upon which you build your
+own projects. Please let us know if you build something cool!
+
+Enjoy!
+
+Cam Turner, Jeffrey Sambells & Mike Purvis.

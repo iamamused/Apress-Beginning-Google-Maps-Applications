@@ -1,0 +1,5 @@
+FEAT	11	8	Line Name Identification Number
+FEDIRP	19	2	Feature Direction, Prefix
+FENAME	21	30	Feature Name
+FETYPE	51	4	Feature Type
+FEDIRS	55	2	Feature Direction, Suffix

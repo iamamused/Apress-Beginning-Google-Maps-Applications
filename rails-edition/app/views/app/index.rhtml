@@ -1,0 +1,20 @@
+<div class="banner">
+  <%=link_to (image_tag 'book_thumbnail.gif', :size=>'150x199', :id=>'thumbnail-image'), 'http://www.apress.com/book/bookDisplay.html?bID=10221', :id=>'book-thumbnail'%>
+  <div id="welcome-text">
+    <p>Welcome! This site contains examples for the <a href="http://www.apress.com/book/bookDisplay.html?bID=10221">Google Maps Applications with Rails and Ajax</a> book.</p>
+    <p>There is more information, examples, and source available at <a href="http://googlemapsbook.com/">googlemapsbook.com</a>.</p>
+  </div> 
+  <div style="clear:both"></div>
+</div>
+
+<div class="content">    
+  <h2>Examples by Chapter</h2>
+  <ul>
+    <% %w(two three four five six seven nine ten eleven).each do |num|  %>
+    <li><%=link_to "Chapter #{num}", url_for(:controller=>"chap_#{num}") %></li>
+    <% end %>
+  </ul>
+  
+  <%=render :partial=>'app/more_resources'%>
+  
+</div>

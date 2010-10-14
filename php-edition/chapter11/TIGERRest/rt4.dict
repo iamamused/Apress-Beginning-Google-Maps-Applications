@@ -1,0 +1,7 @@
+TLID	6	10	TIGER/Line® ID, Permanent 1-Cell Number
+RTSQ	16	3	Record Sequence Number
+FEAT1	19	8	Line Additional Name Identification Number, First
+FEAT2	27	8	Line Additional Name Identification Number, Second
+FEAT3	35	8	Line Additional Name Identification Number, Third
+FEAT4	43	8	Line Additional Name Identification Number, Fourth
+FEAT5	51	8	Line Additional Name Identification Number, Fifth

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<%=GOOGLE_MAPS_KEY%>" type="text/javascript"></script>
+  <%=javascript_include_tag 'prototype','chap_six_fullscreen_map'%>
+  <script type="text/javascript">
+   var markers=<%=@towers.to_json%>;
+  </script>
+  <%=stylesheet_link_tag 'style_6_2'%>
+</head>
+<body id="body">
+  <div id="map"></div>
+   <div id="toolbar">
+      <h1>Cell-Tower Locations</h1>
+      <ul id="filters">
+           <li><a href="#">Towers</a></li>
+           <li><a href="#">Poles</a></li>
+           <li><a href="#">Masts</a></li>
+           <li><a href="#">Other</a></li>
+      </ul>
+   </div>
+</body>
+</html>
